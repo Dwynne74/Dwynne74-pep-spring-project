@@ -8,7 +8,4 @@ import com.example.entity.Message;
 
 @Repository
 public interface MessageRepository extends JpaRepository<Message, Integer>{
-
-    @Query("DELETE FROM message m WHERE m.messageId = ?1")
-    int deleteMessageById(int id);
 }
